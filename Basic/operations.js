@@ -23,6 +23,10 @@ console.log("hello");
 let a=4;
 console.log(a++)
 console.log(++a);
-let b = a++ + ++a 
+//let b = a++ + ++a 
 
-console.log(b);
+//console.log(b);
+
+let b=6;
+let c=b++;
+console.table([b,c])
