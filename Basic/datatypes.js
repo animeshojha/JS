@@ -1,4 +1,5 @@
 console.log("in this we will leran about datatypes");
+// alert can be used in this because we r using node js not any browser
 console.log("hello animesh");
 let name="animesh"
 console.log(typeof name);
