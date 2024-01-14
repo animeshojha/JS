@@ -1,5 +1,5 @@
 console.log("in this we will leran about datatypes");
-
+console.log("hello animesh");
 let name="animesh"
 console.log(typeof name);
 let age=12;
