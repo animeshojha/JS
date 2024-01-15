@@ -32,6 +32,7 @@ let b=Symbol("123");
 console.log(a==b);
 console.log(a===b);
 console.log(typeof a);
+console.log(b);
 
 // array
 const name1=["animesh" , "deepu", "ABCDE"];
