@@ -23,10 +23,12 @@ console.log("hello");
 let a=4;
 console.log(a++)
 console.log(++a);
-//let b = a++ + ++a 
+let e= a++ + ++a 
 
-//console.log(b);
+console.log(e);
 
 let b=6;
 let c=b++;
 console.table([b,c])
+console.log(1+2+3+"4");
+console.log("1"+2+3+4);
