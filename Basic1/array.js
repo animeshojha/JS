@@ -30,13 +30,15 @@ console.log("A ", myarr);
 // console.log("original array after splice operation");
 // console.log(myarr);
 
-// let m=[1,2,3,4,5,6,7,8,9];
-// console.log(m);
-// let o=m.slice(1,4);
-// console.log(o);
-// console.log(m);
-// let p=m.splice(1,3);
-// console.log(p);
-// console.log(m);
+let m=[0,1,2,3,4,5,6,7,8,9];
+console.log(m);
+let o=m.slice(1,4);
+console.log(o);
+console.log(m);
+let p=m.splice(1,1);
+console.log(p);
+console.log(m);
+
+
 
 
