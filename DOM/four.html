@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CHAI AUR CODE</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>java-script</li>
+    </ul>
+</body>
+<script>
+     function addlanguage(languagename){
+        let lan=document.createElement("li");
+        lan.innerText=`${languagename}`    // take more time to process in big projects
+        document.querySelector(".language").appendChild(lan);
+     }
+     addlanguage("python")
+     addlanguage("cpp")
+
+     function addlanopt(languagename){
+        let ans=document.createElement("li")       
+        let addtext=document.createTextNode(`${languagename}`)  // take less time
+        ans.appendChild(addtext)
+        document.querySelector(".language").appendChild(ans)
+
+     }
+     addlanopt("golang")
+
+
+// editing second li
+     let secondlan=document.querySelector("li:nth-child(2)")
+     console.log(secondlan)
+     //secondlan.innerText="java"
+     let newli=document.createElement("li")
+     let text=document.createTextNode("mojo")
+     newli.appendChild(text);
+     secondlan.replaceWith(newli)
+
+ // editing first li 
+     let firstlan=document.querySelector("li:nth-child(1)");
+     let ans=document.createElement("li")
+     let add=document.createTextNode("typescript")
+     ans.append(add)
+     firstlan.replaceWith(ans)
+
+// remove ...............
+let lastlan=document.querySelector("li:nth-child(4)")
+lastlan.remove()
+// let parentnode=lastlan.parentNode
+// parentnode.removeChild(lastlan)
+</script>
+</html>
