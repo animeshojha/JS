@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    let ans=document.createElement("div")
+    console.log(ans);
+    ans.className="class";
+    ans.id=Math.round(Math.random()*10+1);
+    ans.setAttribute("title" , "generated title")
+    ans.style.backgroundColor="green"
+    //ans.innerText="this is a created div elements by me"
+    let addtext=document.createTextNode("animesh");
+    ans.append(addtext)
+    document.body.appendChild(ans)
+
+    let myh1=document.createElement("h1");
+    console.log(myh1);
+    myh1.className="animesh";
+    myh1.setAttribute("name","deepu");
+    myh1.style.backgroundColor="green";
+    myh1.style.color="red";
+    let test=document.createTextNode("hello my name is animesh ojha")
+    myh1.append(test)
+    document.body.appendChild(myh1)
+</script>
+</html>
