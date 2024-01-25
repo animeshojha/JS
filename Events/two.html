@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="button">stop</button>
+    
+</body>
+<script>
+    const animesh=function(){
+        console.log("animesh");
+    }
+    var changename=function(){
+        document.querySelector("h1").innerHTML="animesh";
+    }
+   const change= setTimeout(changename,3000)
+    document.querySelector("#button").addEventListener("click" , function(){
+        clearTimeout(change);
+        console.log("sttoped");
+    })
+</script>
+</html>
